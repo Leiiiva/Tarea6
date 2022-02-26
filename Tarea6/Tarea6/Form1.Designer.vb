@@ -38,11 +38,15 @@ Partial Class Form1
         Me.lbl_num_a = New System.Windows.Forms.Label()
         Me.btn_plus_a = New System.Windows.Forms.Button()
         Me.btn_minus_a = New System.Windows.Forms.Button()
+        Me.btn_clean = New System.Windows.Forms.Button()
+        Me.btn_exit = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btn_exit)
+        Me.GroupBox1.Controls.Add(Me.btn_clean)
         Me.GroupBox1.Controls.Add(Me.btn_divide)
         Me.GroupBox1.Controls.Add(Me.btn_multiply)
         Me.GroupBox1.Controls.Add(Me.btn_substract)
@@ -60,7 +64,7 @@ Partial Class Form1
         Me.GroupBox1.Font = New System.Drawing.Font("Acumin Pro", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(403, 333)
+        Me.GroupBox1.Size = New System.Drawing.Size(403, 389)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Calculadora Simple"
@@ -78,7 +82,7 @@ Partial Class Form1
         'btn_multiply
         '
         Me.btn_multiply.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_multiply.Location = New System.Drawing.Point(268, 197)
+        Me.btn_multiply.Location = New System.Drawing.Point(268, 196)
         Me.btn_multiply.Name = "btn_multiply"
         Me.btn_multiply.Size = New System.Drawing.Size(117, 38)
         Me.btn_multiply.TabIndex = 44
@@ -153,11 +157,11 @@ Partial Class Form1
         'lbl_result
         '
         Me.lbl_result.AutoSize = True
-        Me.lbl_result.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbl_result.Font = New System.Drawing.Font("Acumin Pro", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lbl_result.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.lbl_result.Location = New System.Drawing.Point(69, 279)
+        Me.lbl_result.Location = New System.Drawing.Point(44, 261)
         Me.lbl_result.Name = "lbl_result"
-        Me.lbl_result.Size = New System.Drawing.Size(0, 28)
+        Me.lbl_result.Size = New System.Drawing.Size(0, 42)
         Me.lbl_result.TabIndex = 37
         Me.lbl_result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -166,7 +170,7 @@ Partial Class Form1
         Me.lbl_1.AutoSize = True
         Me.lbl_1.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lbl_1.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.lbl_1.Location = New System.Drawing.Point(17, 202)
+        Me.lbl_1.Location = New System.Drawing.Point(17, 201)
         Me.lbl_1.Name = "lbl_1"
         Me.lbl_1.Size = New System.Drawing.Size(169, 28)
         Me.lbl_1.TabIndex = 36
@@ -214,11 +218,31 @@ Partial Class Form1
         Me.btn_minus_a.Text = "-"
         Me.btn_minus_a.UseVisualStyleBackColor = True
         '
+        'btn_clean
+        '
+        Me.btn_clean.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_clean.Location = New System.Drawing.Point(60, 345)
+        Me.btn_clean.Name = "btn_clean"
+        Me.btn_clean.Size = New System.Drawing.Size(117, 38)
+        Me.btn_clean.TabIndex = 46
+        Me.btn_clean.Text = "Limpiar"
+        Me.btn_clean.UseVisualStyleBackColor = True
+        '
+        'btn_exit
+        '
+        Me.btn_exit.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_exit.Location = New System.Drawing.Point(216, 345)
+        Me.btn_exit.Name = "btn_exit"
+        Me.btn_exit.Size = New System.Drawing.Size(117, 38)
+        Me.btn_exit.TabIndex = 47
+        Me.btn_exit.Text = "Salir"
+        Me.btn_exit.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(427, 357)
+        Me.ClientSize = New System.Drawing.Size(427, 413)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
@@ -245,4 +269,6 @@ Partial Class Form1
     Friend WithEvents lbl_num_a As Label
     Friend WithEvents btn_plus_a As Button
     Friend WithEvents btn_minus_a As Button
+    Friend WithEvents btn_exit As Button
+    Friend WithEvents btn_clean As Button
 End Class
