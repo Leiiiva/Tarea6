@@ -23,174 +23,226 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.btn_minus = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.lbl_name = New System.Windows.Forms.Label()
-        Me.lbl_exit = New System.Windows.Forms.Label()
-        Me.lbl_clean = New System.Windows.Forms.Label()
-        Me.lnl_print = New System.Windows.Forms.Label()
-        Me.lbl_change = New System.Windows.Forms.Label()
-        Me.lbl_hi = New System.Windows.Forms.Label()
-        Me.btn_ok = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.btn_plus = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_divide = New System.Windows.Forms.Button()
+        Me.btn_multiply = New System.Windows.Forms.Button()
+        Me.btn_substract = New System.Windows.Forms.Button()
+        Me.lbl_b = New System.Windows.Forms.Label()
+        Me.lbl_num_b = New System.Windows.Forms.Label()
+        Me.btn_plus_b = New System.Windows.Forms.Button()
+        Me.btn_minus_b = New System.Windows.Forms.Button()
+        Me.lbl_a = New System.Windows.Forms.Label()
+        Me.lbl_result = New System.Windows.Forms.Label()
+        Me.lbl_1 = New System.Windows.Forms.Label()
+        Me.btn_add = New System.Windows.Forms.Button()
+        Me.lbl_num_a = New System.Windows.Forms.Label()
+        Me.btn_plus_a = New System.Windows.Forms.Button()
+        Me.btn_minus_a = New System.Windows.Forms.Button()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'btn_minus
+        'GroupBox1
         '
-        Me.btn_minus.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_minus.Location = New System.Drawing.Point(3, 3)
-        Me.btn_minus.Name = "btn_minus"
-        Me.btn_minus.Size = New System.Drawing.Size(40, 38)
-        Me.btn_minus.TabIndex = 0
-        Me.btn_minus.Text = "-"
-        Me.btn_minus.UseVisualStyleBackColor = True
+        Me.GroupBox1.Controls.Add(Me.btn_divide)
+        Me.GroupBox1.Controls.Add(Me.btn_multiply)
+        Me.GroupBox1.Controls.Add(Me.btn_substract)
+        Me.GroupBox1.Controls.Add(Me.lbl_b)
+        Me.GroupBox1.Controls.Add(Me.lbl_num_b)
+        Me.GroupBox1.Controls.Add(Me.btn_plus_b)
+        Me.GroupBox1.Controls.Add(Me.btn_minus_b)
+        Me.GroupBox1.Controls.Add(Me.lbl_a)
+        Me.GroupBox1.Controls.Add(Me.lbl_result)
+        Me.GroupBox1.Controls.Add(Me.lbl_1)
+        Me.GroupBox1.Controls.Add(Me.btn_add)
+        Me.GroupBox1.Controls.Add(Me.lbl_num_a)
+        Me.GroupBox1.Controls.Add(Me.btn_plus_a)
+        Me.GroupBox1.Controls.Add(Me.btn_minus_a)
+        Me.GroupBox1.Font = New System.Drawing.Font("Acumin Pro", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(403, 333)
+        Me.GroupBox1.TabIndex = 0
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Calculadora Simple"
         '
-        'Panel1
+        'btn_divide
         '
-        Me.Panel1.Controls.Add(Me.lbl_name)
-        Me.Panel1.Controls.Add(Me.lbl_exit)
-        Me.Panel1.Controls.Add(Me.lbl_clean)
-        Me.Panel1.Controls.Add(Me.lnl_print)
-        Me.Panel1.Controls.Add(Me.lbl_change)
-        Me.Panel1.Controls.Add(Me.lbl_hi)
-        Me.Panel1.Controls.Add(Me.btn_ok)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.btn_plus)
-        Me.Panel1.Controls.Add(Me.btn_minus)
-        Me.Panel1.Location = New System.Drawing.Point(12, 12)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(346, 274)
-        Me.Panel1.TabIndex = 1
+        Me.btn_divide.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_divide.Location = New System.Drawing.Point(268, 274)
+        Me.btn_divide.Name = "btn_divide"
+        Me.btn_divide.Size = New System.Drawing.Size(117, 38)
+        Me.btn_divide.TabIndex = 45
+        Me.btn_divide.Text = "Dividir"
+        Me.btn_divide.UseVisualStyleBackColor = True
         '
-        'lbl_name
+        'btn_multiply
         '
-        Me.lbl_name.AutoSize = True
-        Me.lbl_name.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lbl_name.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.lbl_name.Location = New System.Drawing.Point(204, 67)
-        Me.lbl_name.Name = "lbl_name"
-        Me.lbl_name.Size = New System.Drawing.Size(0, 28)
-        Me.lbl_name.TabIndex = 9
-        Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btn_multiply.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_multiply.Location = New System.Drawing.Point(268, 197)
+        Me.btn_multiply.Name = "btn_multiply"
+        Me.btn_multiply.Size = New System.Drawing.Size(117, 38)
+        Me.btn_multiply.TabIndex = 44
+        Me.btn_multiply.Text = "Multiplicar"
+        Me.btn_multiply.UseVisualStyleBackColor = True
         '
-        'lbl_exit
+        'btn_substract
         '
-        Me.lbl_exit.AutoSize = True
-        Me.lbl_exit.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lbl_exit.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.lbl_exit.Location = New System.Drawing.Point(122, 240)
-        Me.lbl_exit.Name = "lbl_exit"
-        Me.lbl_exit.Size = New System.Drawing.Size(82, 28)
-        Me.lbl_exit.TabIndex = 8
-        Me.lbl_exit.Text = "5- Salir"
-        Me.lbl_exit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btn_substract.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_substract.Location = New System.Drawing.Point(268, 115)
+        Me.btn_substract.Name = "btn_substract"
+        Me.btn_substract.Size = New System.Drawing.Size(117, 38)
+        Me.btn_substract.TabIndex = 43
+        Me.btn_substract.Text = "Restar"
+        Me.btn_substract.UseVisualStyleBackColor = True
         '
-        'lbl_clean
+        'lbl_b
         '
-        Me.lbl_clean.AutoSize = True
-        Me.lbl_clean.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lbl_clean.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.lbl_clean.Location = New System.Drawing.Point(227, 189)
-        Me.lbl_clean.Name = "lbl_clean"
-        Me.lbl_clean.Size = New System.Drawing.Size(112, 28)
-        Me.lbl_clean.TabIndex = 7
-        Me.lbl_clean.Text = "4- Limpiar"
-        Me.lbl_clean.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_b.AutoSize = True
+        Me.lbl_b.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbl_b.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.lbl_b.Location = New System.Drawing.Point(17, 120)
+        Me.lbl_b.Name = "lbl_b"
+        Me.lbl_b.Size = New System.Drawing.Size(37, 28)
+        Me.lbl_b.TabIndex = 42
+        Me.lbl_b.Text = "B :"
+        Me.lbl_b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lnl_print
+        'lbl_num_b
         '
-        Me.lnl_print.AutoSize = True
-        Me.lnl_print.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lnl_print.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.lnl_print.Location = New System.Drawing.Point(3, 189)
-        Me.lnl_print.Name = "lnl_print"
-        Me.lnl_print.Size = New System.Drawing.Size(205, 28)
-        Me.lnl_print.TabIndex = 6
-        Me.lnl_print.Text = "2- Imprimir Nombre"
-        Me.lnl_print.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_num_b.AutoSize = True
+        Me.lbl_num_b.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbl_num_b.Location = New System.Drawing.Point(129, 120)
+        Me.lbl_num_b.Name = "lbl_num_b"
+        Me.lbl_num_b.Size = New System.Drawing.Size(24, 28)
+        Me.lbl_num_b.TabIndex = 41
+        Me.lbl_num_b.Text = "0"
+        Me.lbl_num_b.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lbl_change
+        'btn_plus_b
         '
-        Me.lbl_change.AutoSize = True
-        Me.lbl_change.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lbl_change.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.lbl_change.Location = New System.Drawing.Point(3, 140)
-        Me.lbl_change.Name = "lbl_change"
-        Me.lbl_change.Size = New System.Drawing.Size(201, 28)
-        Me.lbl_change.TabIndex = 5
-        Me.lbl_change.Text = "1- Cambiar Nombre"
-        Me.lbl_change.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btn_plus_b.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_plus_b.Location = New System.Drawing.Point(179, 115)
+        Me.btn_plus_b.Name = "btn_plus_b"
+        Me.btn_plus_b.Size = New System.Drawing.Size(40, 38)
+        Me.btn_plus_b.TabIndex = 40
+        Me.btn_plus_b.Text = "+"
+        Me.btn_plus_b.UseVisualStyleBackColor = True
         '
-        'lbl_hi
+        'btn_minus_b
         '
-        Me.lbl_hi.AutoSize = True
-        Me.lbl_hi.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lbl_hi.ForeColor = System.Drawing.Color.MidnightBlue
-        Me.lbl_hi.Location = New System.Drawing.Point(227, 140)
-        Me.lbl_hi.Name = "lbl_hi"
-        Me.lbl_hi.Size = New System.Drawing.Size(113, 28)
-        Me.lbl_hi.TabIndex = 4
-        Me.lbl_hi.Text = "3- Saludar"
-        Me.lbl_hi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btn_minus_b.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_minus_b.Location = New System.Drawing.Point(60, 115)
+        Me.btn_minus_b.Name = "btn_minus_b"
+        Me.btn_minus_b.Size = New System.Drawing.Size(40, 38)
+        Me.btn_minus_b.TabIndex = 39
+        Me.btn_minus_b.Text = "-"
+        Me.btn_minus_b.UseVisualStyleBackColor = True
         '
-        'btn_ok
+        'lbl_a
         '
-        Me.btn_ok.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_ok.Location = New System.Drawing.Point(44, 62)
-        Me.btn_ok.Name = "btn_ok"
-        Me.btn_ok.Size = New System.Drawing.Size(80, 38)
-        Me.btn_ok.TabIndex = 3
-        Me.btn_ok.Text = "Ok !"
-        Me.btn_ok.UseVisualStyleBackColor = True
+        Me.lbl_a.AutoSize = True
+        Me.lbl_a.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbl_a.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.lbl_a.Location = New System.Drawing.Point(17, 43)
+        Me.lbl_a.Name = "lbl_a"
+        Me.lbl_a.Size = New System.Drawing.Size(37, 28)
+        Me.lbl_a.TabIndex = 38
+        Me.lbl_a.Text = "A :"
+        Me.lbl_a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label1
+        'lbl_result
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(72, 8)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(24, 28)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "0"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_result.AutoSize = True
+        Me.lbl_result.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbl_result.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.lbl_result.Location = New System.Drawing.Point(69, 279)
+        Me.lbl_result.Name = "lbl_result"
+        Me.lbl_result.Size = New System.Drawing.Size(0, 28)
+        Me.lbl_result.TabIndex = 37
+        Me.lbl_result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btn_plus
+        'lbl_1
         '
-        Me.btn_plus.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_plus.Location = New System.Drawing.Point(122, 3)
-        Me.btn_plus.Name = "btn_plus"
-        Me.btn_plus.Size = New System.Drawing.Size(40, 38)
-        Me.btn_plus.TabIndex = 1
-        Me.btn_plus.Text = "+"
-        Me.btn_plus.UseVisualStyleBackColor = True
+        Me.lbl_1.AutoSize = True
+        Me.lbl_1.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbl_1.ForeColor = System.Drawing.Color.MidnightBlue
+        Me.lbl_1.Location = New System.Drawing.Point(17, 202)
+        Me.lbl_1.Name = "lbl_1"
+        Me.lbl_1.Size = New System.Drawing.Size(169, 28)
+        Me.lbl_1.TabIndex = 36
+        Me.lbl_1.Text = "El resultado es :"
+        Me.lbl_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btn_add
+        '
+        Me.btn_add.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_add.Location = New System.Drawing.Point(268, 38)
+        Me.btn_add.Name = "btn_add"
+        Me.btn_add.Size = New System.Drawing.Size(117, 38)
+        Me.btn_add.TabIndex = 35
+        Me.btn_add.Text = "Sumar"
+        Me.btn_add.UseVisualStyleBackColor = True
+        '
+        'lbl_num_a
+        '
+        Me.lbl_num_a.AutoSize = True
+        Me.lbl_num_a.Font = New System.Drawing.Font("Acumin Pro", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lbl_num_a.Location = New System.Drawing.Point(129, 43)
+        Me.lbl_num_a.Name = "lbl_num_a"
+        Me.lbl_num_a.Size = New System.Drawing.Size(24, 28)
+        Me.lbl_num_a.TabIndex = 34
+        Me.lbl_num_a.Text = "0"
+        Me.lbl_num_a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btn_plus_a
+        '
+        Me.btn_plus_a.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_plus_a.Location = New System.Drawing.Point(179, 38)
+        Me.btn_plus_a.Name = "btn_plus_a"
+        Me.btn_plus_a.Size = New System.Drawing.Size(40, 38)
+        Me.btn_plus_a.TabIndex = 33
+        Me.btn_plus_a.Text = "+"
+        Me.btn_plus_a.UseVisualStyleBackColor = True
+        '
+        'btn_minus_a
+        '
+        Me.btn_minus_a.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_minus_a.Location = New System.Drawing.Point(60, 38)
+        Me.btn_minus_a.Name = "btn_minus_a"
+        Me.btn_minus_a.Size = New System.Drawing.Size(40, 38)
+        Me.btn_minus_a.TabIndex = 32
+        Me.btn_minus_a.Text = "-"
+        Me.btn_minus_a.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(370, 297)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(427, 357)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "201314707 - Edgar Leiva"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents btn_minus As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents lbl_change As Label
-    Friend WithEvents lbl_hi As Label
-    Friend WithEvents btn_ok As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents btn_plus As Button
-    Friend WithEvents lbl_exit As Label
-    Friend WithEvents lbl_clean As Label
-    Friend WithEvents lnl_print As Label
-    Friend WithEvents lbl_name As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btn_divide As Button
+    Friend WithEvents btn_multiply As Button
+    Friend WithEvents btn_substract As Button
+    Friend WithEvents lbl_b As Label
+    Friend WithEvents lbl_num_b As Label
+    Friend WithEvents btn_plus_b As Button
+    Friend WithEvents btn_minus_b As Button
+    Friend WithEvents lbl_a As Label
+    Friend WithEvents lbl_result As Label
+    Friend WithEvents lbl_1 As Label
+    Friend WithEvents btn_add As Button
+    Friend WithEvents lbl_num_a As Label
+    Friend WithEvents btn_plus_a As Button
+    Friend WithEvents btn_minus_a As Button
 End Class
