@@ -24,6 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_exit = New System.Windows.Forms.Button()
+        Me.btn_clean = New System.Windows.Forms.Button()
         Me.btn_divide = New System.Windows.Forms.Button()
         Me.btn_multiply = New System.Windows.Forms.Button()
         Me.btn_substract = New System.Windows.Forms.Button()
@@ -38,8 +40,6 @@ Partial Class Form1
         Me.lbl_num_a = New System.Windows.Forms.Label()
         Me.btn_plus_a = New System.Windows.Forms.Button()
         Me.btn_minus_a = New System.Windows.Forms.Button()
-        Me.btn_clean = New System.Windows.Forms.Button()
-        Me.btn_exit = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,6 +68,26 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Calculadora Simple"
+        '
+        'btn_exit
+        '
+        Me.btn_exit.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_exit.Location = New System.Drawing.Point(216, 345)
+        Me.btn_exit.Name = "btn_exit"
+        Me.btn_exit.Size = New System.Drawing.Size(117, 38)
+        Me.btn_exit.TabIndex = 47
+        Me.btn_exit.Text = "Salir"
+        Me.btn_exit.UseVisualStyleBackColor = True
+        '
+        'btn_clean
+        '
+        Me.btn_clean.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_clean.Location = New System.Drawing.Point(60, 345)
+        Me.btn_clean.Name = "btn_clean"
+        Me.btn_clean.Size = New System.Drawing.Size(117, 38)
+        Me.btn_clean.TabIndex = 46
+        Me.btn_clean.Text = "Limpiar"
+        Me.btn_clean.UseVisualStyleBackColor = True
         '
         'btn_divide
         '
@@ -217,26 +237,6 @@ Partial Class Form1
         Me.btn_minus_a.TabIndex = 32
         Me.btn_minus_a.Text = "-"
         Me.btn_minus_a.UseVisualStyleBackColor = True
-        '
-        'btn_clean
-        '
-        Me.btn_clean.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_clean.Location = New System.Drawing.Point(60, 345)
-        Me.btn_clean.Name = "btn_clean"
-        Me.btn_clean.Size = New System.Drawing.Size(117, 38)
-        Me.btn_clean.TabIndex = 46
-        Me.btn_clean.Text = "Limpiar"
-        Me.btn_clean.UseVisualStyleBackColor = True
-        '
-        'btn_exit
-        '
-        Me.btn_exit.Font = New System.Drawing.Font("Acumin Pro", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_exit.Location = New System.Drawing.Point(216, 345)
-        Me.btn_exit.Name = "btn_exit"
-        Me.btn_exit.Size = New System.Drawing.Size(117, 38)
-        Me.btn_exit.TabIndex = 47
-        Me.btn_exit.Text = "Salir"
-        Me.btn_exit.UseVisualStyleBackColor = True
         '
         'Form1
         '

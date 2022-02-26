@@ -22,4 +22,12 @@
         r = a + b
         lbl_result.Text = r.ToString
     End Sub
+
+    Private Sub btn_substract_Click(sender As Object, e As EventArgs) Handles btn_substract.Click
+        Dim a, b, r As Integer
+        a = Convert.ToInt32(lbl_num_a.Text)
+        b = Convert.ToInt32(lbl_num_b.Text)
+        r = a - b
+        lbl_result.Text = r.ToString
+    End Sub
 End Class
